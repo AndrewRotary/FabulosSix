@@ -1,0 +1,11 @@
+version: '2'
+services:
+    fabulossix-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/FabulosSix/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=FabulosSix
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
